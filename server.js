@@ -24,6 +24,15 @@ res.render("pages/nouns", siteData);
 app.get("/books", (req, res) => {
 res.render("pages/books", siteData);
 });
+app.get("/jobs", (req, res) => {
+res.render("pages/jobs", siteData);
+});
+app.get("/translations", (req, res) => {
+res.render("pages/translations", siteData);
+});
+app.get("/landscapePhotos", (req, res) => {
+    res.render("pages/landscapePhotos", siteData);
+});
 // console.log(siteData)
 
 //das ist alte version 
