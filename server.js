@@ -16,21 +16,27 @@ app.set("views", path.join(__dirname, "./src/views"));
 //send in model data to the view as we did before
 
 app.get("/", (req, res) => {
+    siteData.currentPage ='welcome';
 res.render("pages/index", siteData);
 });
 app.get("/nouns", (req, res) => {
+      siteData.currentPage = "nouns";
 res.render("pages/nouns", siteData);
 });
 app.get("/books", (req, res) => {
+      siteData.currentPage = "books";
 res.render("pages/books", siteData);
 });
 app.get("/jobs", (req, res) => {
+      siteData.currentPage = "jobs";
 res.render("pages/jobs", siteData);
 });
 app.get("/translations", (req, res) => {
+      siteData.currentPage = "translations";
 res.render("pages/translations", siteData);
 });
 app.get("/landscapePhotos", (req, res) => {
+      siteData.currentPage = "landscapePhotos";
     res.render("pages/landscapePhotos", siteData);
 });
 // console.log(siteData)

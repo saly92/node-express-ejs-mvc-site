@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    <% const
+   showActiveClass=(page)=> {
+	if(page === currentPage) {
+	return "class=active";
+	} else {
+	return '';
+	}
+	}
+	%>
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,11 +18,17 @@
     </head>
     <body>
      <h1>Information Site</h1>  
-      <nav>
-        <a href="/">welcome</a> |
-        <a href="nouns">nouns</a> |
-        <a href="translations">translationsnouns</a> |
-        <a href="books">books</a> |
-        <a href="jobs">jobs</a>
-        <a href="landscapePhotos">landscapePhotos</a>
-    </nav>
+    <nav>
+			<a href="/"
+			   <%=showActiveClass('welcome')%>>welcome</a> |
+			<a href="/nouns"
+			   <%=showActiveClass('nouns')%>>nouns</a> |
+			<a href="/books"
+			   <%=showActiveClass('books')%>>books</a> |
+			<a href="/translations"
+			   <%=showActiveClass('translations')%>>translations</a> |
+			<a href="/landscapePhotos"
+			   <%=showActiveClass('landscapePhotos')%>>landscape photos</a> |
+			<a href="/jobs"
+			   <%=showActiveClass('jobs')%>>jobs</a>
+		</nav>
