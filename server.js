@@ -18,6 +18,7 @@ app.set("views", path.join(__dirname, "./public/views"));
 app.get("/", (req, res) => {
     res.render("pages/index", siteData);
 });
+console.log(siteData)
 
 //das ist alte version 
 // app.get('/', (req, res) => {

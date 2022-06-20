@@ -8,26 +8,8 @@ export const siteView = ({
     landscapePhotos
 }) => {
     return `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <title>Info Site</title>
-</head>
-<body>
-    <h1>Info Site</h1>
 
-    <h2><b>API call: </b>There are ${nouns.length} nouns.</h2>
-    <div class="content">
-        ${nouns
-            .filter((m, i) => i < 3)
-            .map((m) => m.article + ' ' + m.singular)
-            .join(', ')}, ...
-    </div>
-
+   
     <h2><b>Local JSON file: </b>There are ${books.length} books.</h2>	
     <div class="content">
         ${books
@@ -87,7 +69,6 @@ export const siteView = ({
             .join('')}
     </div>
 
-</body>
-</html>
+
 `;
 };
