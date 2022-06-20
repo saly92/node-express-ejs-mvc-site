@@ -1,0 +1,12 @@
+ <h1>Info Site</h1>
+
+     <div class="content">
+           <h2><b>API call: </b>There are <%=nouns.length%> nouns.</h2>
+        <ul class="content">
+            <% for (const noun of nouns.slice(0,3)){%>
+            <li><%=noun.singular%></li>
+            <%} %> 
+            <li>...</li>
+            
+            </ul>
+     </div>
